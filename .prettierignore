@@ -5,3 +5,4 @@ pnpm-lock.yaml
 *.config.*
 *.md
 .eslintrc.json
+package.json

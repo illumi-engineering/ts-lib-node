@@ -18,8 +18,6 @@
 .prettierignore
 .nycrc.json
 .yarnrc.yml
-.yamlfmt.yml
-.yamllint.yml
 
 commitlint.config.ts
 tsconfig.json

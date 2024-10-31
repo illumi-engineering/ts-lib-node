@@ -4,3 +4,4 @@
 src/declarations.d.ts
 .eslintrc.json
 commitlint.config.ts
+package.json

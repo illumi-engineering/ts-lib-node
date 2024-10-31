@@ -29,12 +29,11 @@
     "optimize-regex",
     "@typescript-eslint",
     "write-good-comments",
-    "eslint-plugin-tsdoc",
+    "eslint-plugin-tsdoc"
   ],
   "extends": [
     "eslint:recommended",
     "plugin:github/recommended",
-    "plugin:lodash/recommended",
     "plugin:regexp/recommended",
     "plugin:sonarjs/recommended",
     "plugin:promise/recommended",
@@ -56,7 +55,6 @@
     "github/array-foreach": 0,
     "no-secrets/no-secrets": "error",
     "linebreak-style": ["error", "unix"],
-    "lodash/prefer-lodash-method": 0,
     "sonarjs/no-duplicate-string": 0,
     "@typescript-eslint/no-unsafe-call": 0,
     "sonarjs/no-nested-template-literals": 0,

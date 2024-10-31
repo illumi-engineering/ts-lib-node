@@ -1,27 +1,16 @@
 {
-  "name": "@f3rno64/node-ts-lib-template",
-  "version": "0.0.8",
+  "name": "@illumi/package",
+  "version": "0.0.0",
   "private": true,
-  "description": "A template repository for Node.JS TypeScript libraries",
-  "keywords": [
-    "typescript",
-    "template",
-    "boilerplate",
-    "markdownlint",
-    "prettier",
-    "commitlint",
-    "library",
-    "vitest",
-    "eslint",
-    "typedoc"
-  ],
-  "homepage": "https://github.com/f3rno64/node-ts-lib-template",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://illumi.sh",
   "bugs": {
-    "url": "https://github.com/f3rno64/node-ts-lib-template/issues"
+    "url": "https://github.com/your/repo/issues"
   },
-  "repository": "https://github.com/f3rno64/node-ts-lib-template",
+  "repository": "https://github.com/your/repo",
   "license": "MIT",
-  "author": "Cris Mihalache <f3rno64@gmail.com>",
+  "authors": [],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -32,18 +21,12 @@
     "format:check": "pnpm format:prettier:check && pnpm format:yaml:check",
     "format:prettier": "prettier --write .",
     "format:prettier:check": "prettier --check .",
-    "format:yaml": "yamlfmt -conf .yamlfmt.yml .yamllint.yml -quiet -dstar **/*.{yaml,yml}",
-    "format:yaml:check": "yamlfmt -conf .yamlfmt.yml .yamllint.yml-quiet -dry -dstar **/*.{yaml,yml}",
     "lint": "pnpm lint:markdownlint && pnpm lint:eslint && pnpm lint:yaml",
     "lint:eslint": "eslint -f stylish --ext .json,.ts package.json src/**/*",
     "lint:eslint:fix": "eslint -f stylish --fix --ext .json,.ts package.json src/**/*",
     "lint:fix": "pnpm lint:markdownlint:fix && pnpm lint:eslint:fix && pnpm lint:yaml:fix",
     "lint:markdownlint": "markdownlint README.md",
     "lint:markdownlint:fix": "markdownlint --fix README.md",
-    "lint:yaml": "yamllint -f auto -s .yamlfmt.yml .yamllint.yml",
-    "lint:yaml:fix": [
-      "yamlfmt -conf .yamlfmt.yml -quiet -dry -dstar .yamlfmt.yml .yamllint.yml"
-    ],
     "prepare": "husky",
     "prepare-release": "pnpm build && git add docs",
     "prepublish": "pnpm build",
